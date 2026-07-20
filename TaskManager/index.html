@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TaskFlow Task Manager</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="taskmanager.js" defer></script>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <h1>TaskFlow Task Manager</h1>
+
+    <p class="instructions">
+      Add and organize your daily tasks.
+    </p>
+
+    <form id="taskForm">
+
+      <label for="taskName">Task Name</label>
+
+      <input
+        type="text"
+        id="taskName"
+        placeholder="Enter a task"
+        required
+      >
+
+      <label for="taskPriority">Priority</label>
+
+      <select id="taskPriority">
+        <option value="High">High</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="Low">Low</option>
+      </select>
+
+      <div class="checkbox-group">
+
+        <label>
+          <input type="checkbox" id="importantTask">
+          Important
+        </label>
+
+        <label>
+          <input type="checkbox" id="completedTask">
+          Completed
+        </label>
+
+      </div>
+
+      <button type="submit">Add Task</button>
+
+    </form>
+
+    <h2>My Tasks</h2>
+
+    <div id="taskmanager">
+      <p>No tasks have been added yet.</p>
+    </div>
+
+  </main>
+
+</body>
+</html>
